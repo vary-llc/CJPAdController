@@ -17,7 +17,7 @@ CJPAdController is a singleton class allowing easy implementation of iAd and AdM
   s.social_media_url = 'http://twitter.com/ChrisJP88'
   s.platform = :ios, '6.0'
   s.source = {
-      :git => 'https://github.com/chrisjp/CJPAdController.git',
+      :git => 'https://github.com/nabeelarif100/CJPAdController.git',
       :tag => s.version.to_s
   }
   s.source_files = 'CJPAdController/*.{h,m}'
