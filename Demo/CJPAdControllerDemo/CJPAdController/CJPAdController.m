@@ -80,6 +80,11 @@ static NSString * const CJPAdsPurchasedKey = @"adRemovalPurchased";
 - (void)startWithViewController:(UIViewController *)contentController
 {
     _contentController = contentController;
+    // Resetting the ad views. It fixed the problem, which was causing ads disappear when contentViewController was changed at runtime
+    _iAdView=nil;
+    _adMobView=nil;
+    _showingiAd = NO;
+    _showingAdMob = NO;
     
     // Is this being used in a UITabBarController or a UINavigationController?
     _isTabBar = [_contentController isKindOfClass:[UITabBarController class]] ? YES : NO;
