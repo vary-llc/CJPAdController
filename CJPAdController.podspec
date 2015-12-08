@@ -23,7 +23,6 @@ CJPAdController is a singleton class allowing easy implementation of iAd and AdM
   s.source_files = 'CJPAdController/*.{h,m}'
   s.frameworks = 'iAd', 'AdSupport'
   s.requires_arc = true
-  s.dependency 'Google-Mobile-Ads-SDK', '~> 7.5'
   s.pod_target_xcconfig = {
       'FRAMEWORK_SEARCH_PATHS' => '$(PODS_ROOT)/Google-Mobile-Ads-SDK/**',
       'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
